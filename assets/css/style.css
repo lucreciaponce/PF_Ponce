@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* LOADING PAGE */
 .loading{
     width: 100vw;
     height: 100vh;
@@ -17,6 +18,17 @@
 .loading i{
     font-size: 96px;
     color: blueviolet;
+    animation-name: rotar;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotar{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
 }
 /* NAVEGADOR */
 .navegador{
