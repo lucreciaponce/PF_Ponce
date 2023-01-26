@@ -133,147 +133,6 @@
 }
 
 
-
-/* FORMATO PHONE */
-@media(max-width:340px){
-    /* NAV phone */
-    .navegador{
-        width: 20px;
-        font-size: 24px;
-    }
-    .navegador .logo{
-        margin-left: 30px;
-        width: 32px;
-        object-fit: cover;
-    }
-    .navegador .fa-bars{
-        display: block;
-        position: absolute; top: 30px; right: 40px;
-        background-color: rgb(173, 209, 241);
-    }
-    .navegador > ul{
-        display: flex;
-        position: fixed;
-        flex-direction: column;
-        top: 50px;
-        right: -100px;
-    }
-    .navegador .fa-bars:hover + ul{
-        right: 5px;
-    }
-    .navegador ul:hover{
-        right: 5px;
-        transition: 0.3s;
-    }
-    .navegador > ul > li > ul{
-        top: 60px;
-        right: 115px;
-        background-color: rgb(173, 209, 241);
-    }
-    .navegador > ul >li > ul:hover{
-        top: 60px;
-        right: 115px;
-        background-color: rgb(173, 209, 241);
-        transition: none;
-    }
-    .navegador > ul > li{
-        padding-top: 10px;
-        text-align: right;
-        background-color: rgb(173, 209, 241);
-    }
-    .navegador > ul > li > ul > li{
-        padding: 5px;
-    }
-    /* HOME phone */
-    .homeHeader{
-        padding: 0;
-    }
-    .homeHeader h1{
-        font-size: 20px;
-        padding: 20px;
-        padding-top: 80px;
-        text-align: center;
-    }
-    .homeMain .homeImg{
-        display: inline-block;
-        padding: 15px;
-        padding-top: 60px;
-        padding-bottom: 90px;
-        width: 320px;
-        object-fit: cover;
-    }
-    /* BIO phone */
-    .bioMain{
-        padding: 0;
-    }
-    .bioMainP{
-        padding: 25px;
-        margin-left: 15px; margin-right: 15px;
-        font-size: 15px;
-    }
-    /* WORK phone */
-    .workSeries div{
-        display: flex;
-        flex-direction: column;
-    }
-    .workSeries > div > a > img{
-        width: 260px;
-        object-fit: cover;
-    }
-    /* SHOP phone */
-    .shopBody{
-        grid-template-areas: "nav nav"
-                            "main main"
-                            "aside aside"
-                            "footer footer";
-    }
-    .shopMain{
-        display: grid;
-        grid-area: main;
-        grid-row: 2/3;
-        grid-column: 1/2;
-        padding: 5px;
-        margin-left: 30px;
-        margin-right: 30px;
-        z-index: -1;
-    }
-    .shopMain div{
-        display: flex; flex-direction: column;
-    }
-    .shopAside{
-        grid-area: aside;
-        display: grid;
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-    .shopAside h3{
-        margin-bottom: 20px;
-    }
-    .shopAside table{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    /* CONTACT phone*/
-    .contactBody{
-        grid-template-areas: "nav nav"
-                            "main main"
-                            "aside aside"
-                            "footer footer";
-    }
-    .contactMain{
-        grid-area: main;
-        grid-row: 2/3;
-        grid-column: 1/2;
-        padding: 0px;
-        display: grid;
-    }
-    .contactAside{
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-}
-    
-
 /* WORK */
 .workBody{
     display: grid;
@@ -448,3 +307,142 @@
     display: grid; justify-items: center;
 }
 
+
+/* FORMATO PHONE */
+@media(max-width:340px){
+    /* NAV phone */
+    .navegador{
+        width: 20px;
+        font-size: 24px;
+    }
+    .navegador .logo{
+        margin-left: 30px;
+        width: 32px;
+        object-fit: cover;
+    }
+    .navegador .fa-bars{
+        display: block;
+        position: absolute; top: 30px; right: 40px;
+        background-color: rgb(173, 209, 241);
+    }
+    .navegador > ul{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        top: 50px;
+        right: -100px;
+    }
+    .navegador .fa-bars:hover + ul{
+        right: 5px;
+    }
+    .navegador ul:hover{
+        right: 5px;
+        transition: 0.3s;
+    }
+    .navegador > ul > li > ul{
+        top: 60px;
+        right: 115px;
+        background-color: rgb(173, 209, 241);
+    }
+    .navegador > ul >li > ul:hover{
+        top: 60px;
+        right: 115px;
+        background-color: rgb(173, 209, 241);
+        transition: none;
+    }
+    .navegador > ul > li{
+        padding-top: 10px;
+        text-align: right;
+        background-color: rgb(173, 209, 241);
+    }
+    .navegador > ul > li > ul > li{
+        padding: 5px;
+    }
+    /* HOME phone */
+    .homeHeader{
+        padding: 0;
+    }
+    .homeHeader h1{
+        font-size: 20px;
+        padding: 20px;
+        padding-top: 80px;
+        text-align: center;
+    }
+    .homeMain .homeImg{
+        display: inline-block;
+        padding: 15px;
+        padding-top: 60px;
+        padding-bottom: 90px;
+        width: 320px;
+        object-fit: cover;
+    }
+    /* BIO phone */
+    .bioMain{
+        padding: 0;
+    }
+    .bioMainP{
+        padding: 25px;
+        margin-left: 15px; margin-right: 15px;
+        font-size: 15px;
+    }
+    /* WORK phone */
+    .workSeries div{
+        display: flex;
+        flex-direction: column;
+    }
+    .workSeries > div > a > img{
+        width: 260px;
+        object-fit: cover;
+    }
+    /* SHOP phone */
+    .shopBody{
+        grid-template-areas: "nav nav"
+                            "main main"
+                            "aside aside"
+                            "footer footer";
+    }
+    .shopMain{
+        display: grid;
+        grid-area: main;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        z-index: -1;
+    }
+    .shopMain div{
+        display: flex; flex-direction: column;
+    }
+    .shopAside{
+        grid-area: aside;
+        display: grid;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .shopAside h3{
+        margin-bottom: 20px;
+    }
+    .shopAside table{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* CONTACT phone*/
+    .contactBody{
+        grid-template-areas: "nav nav"
+                            "main main"
+                            "aside aside"
+                            "footer footer";
+    }
+    .contactMain{
+        grid-area: main;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 0px;
+        display: grid;
+    }
+    .contactAside{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+}
