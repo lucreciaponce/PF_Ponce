@@ -4,7 +4,20 @@
     box-sizing: border-box;
 }
 
-
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(32, 45, 56, 0.822);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading i{
+    font-size: 96px;
+    color: blueviolet;
+}
 /* NAVEGADOR */
 .navegador{
     grid-area: nav;
