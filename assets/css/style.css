@@ -4,32 +4,6 @@
     box-sizing: border-box;
 }
 
-/* LOADING PAGE */
-.loading{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(32, 45, 56, 0.822);
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loading i{
-    font-size: 96px;
-    color: blueviolet;
-    animation-name: rotar;
-    animation-duration: .5s;
-    animation-iteration-count: infinite;
-}
-@keyframes rotar{
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(360deg);
-    }
-}
 /* NAVEGADOR */
 .navegador{
     grid-area: nav;
@@ -322,10 +296,10 @@
 .contactForm label:nth-child(3){
     grid-area: phone;
 }
-.contactForm label:nth-child(4) input{
+.contactForm label:nth-child(4){
     grid-area: message;
     display: grid;
-    justify-items: center;
+    justify-items: left;
 }
 .contactForm label:nth-child(5){
     grid-area: send;
